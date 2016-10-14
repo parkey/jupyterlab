@@ -2,7 +2,7 @@
 // Distributed under the terms of the Modified BSD License.
 
 module.exports = [
-  require('../lib/about/plugin').aboutExtension,
+  //require('../lib/about/plugin').aboutExtension,
   require('../lib/clipboard/plugin').clipboardProvider,
   require('../lib/commandpalette/plugin').commandPaletteProvider,
   require('../lib/console/plugin').consoleTrackerProvider,
@@ -10,12 +10,12 @@ module.exports = [
   require('../lib/csvwidget/plugin').csvHandlerExtension,
   require('../lib/docregistry/plugin').docRegistryProvider,
   require('../lib/editorwidget/plugin').editorHandlerProvider,
-  require('../lib/faq/plugin').faqExtension,
+  //require('../lib/faq/plugin').faqExtension,
   require('../lib/filebrowser/plugin').fileBrowserProvider,
-  require('../lib/help/plugin').helpHandlerExtension,
-  require('../lib/imagewidget/plugin').imageHandlerExtension,
+  //require('../lib/help/plugin').helpHandlerExtension,
+  //require('../lib/imagewidget/plugin').imageHandlerExtension,
   require('../lib/inspector/plugin').inspectorProvider,
-  require('../lib/landing/plugin').landingExtension,
+  //require('../lib/landing/plugin').landingExtension,
   require('../lib/main/plugin').mainExtension,
   require('../lib/mainmenu/plugin').mainMenuProvider,
   require('../lib/markdownwidget/plugin').markdownHandlerExtension,
@@ -25,5 +25,9 @@ module.exports = [
   require('../lib/running/plugin').runningSessionsExtension,
   require('../lib/services/plugin').servicesProvider,
   require('../lib/shortcuts/plugin').shortcutsExtension,
-  require('../lib/terminal/plugin').terminalExtension
+  require('../lib/terminal/plugin').terminalExtension,
+	require('../lib/example/html').plugin,
+  require('../lib/example/misc').plugin,
+	// leaflet removed in upstream
+	//require('jupyterlab/lib/leafletwidget/plugin').mapHandlerExtension,
 ];
