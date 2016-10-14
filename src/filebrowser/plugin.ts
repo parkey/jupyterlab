@@ -246,7 +246,8 @@ function addCommands(app: JupyterLab, tracker: FocusTracker<Widget>, fbWidget: F
   commands.addCommand(cmdIds.open, {
     execute: args => {
       let path = args['path'] as string;
-      fbWidget.openPath(path);
+      let widgetName = args['widgetName'] as string;
+      fbWidget.openPath(path, widgetName);
     }
   });
   commands.addCommand(cmdIds.close, {
