@@ -39,6 +39,7 @@ const markdownHandlerExtension: JupyterLabPlugin<void> = {
   activate: (app: JupyterLab, registry: IDocumentRegistry, rendermime: IRenderMime) => {
     let options: IWidgetFactoryOptions = {
       fileExtensions: ['.md'],
+      defaultFor: ['.md'],
       displayName: 'Rendered Markdown',
       modelName: 'text',
       preferKernel: false,
